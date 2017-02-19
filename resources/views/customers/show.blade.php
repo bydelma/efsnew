@@ -88,7 +88,7 @@
 
 		    	<?php
 		       
-			        $URL = "http://www.google.com/finance/info?q=NSE:" . $stock['symbol'];
+			        $URL = "http://www.google.com/finance/info?q=" . $stock['symbol'];
 			        $file = fopen("$URL", "r");
 			        $r = "";
 			        do {
@@ -109,7 +109,7 @@
 			        ?>
 
 					 <td> <?php echo '$', $price ?> </td>
-					 <td> <?php echo '$', $stock['shares'] * $price;
+					 <td> <?php echo '$', $stock['shares'] * $price ;
                 	$svalue = $svalue + ($stock['shares'] * $price) ?>
                 	</td>
                 	</tr>
